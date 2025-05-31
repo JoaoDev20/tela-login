@@ -151,6 +151,17 @@ input[type="submit"]:hover {
   background-color: #0046d1;
 }
 
+.input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+  display: inline-block;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
 .infobox {
   background-color: #fff;
   height: 60px;
@@ -166,4 +177,23 @@ input[type="submit"]:hover {
 .infobox a {
   user-select: none;
   font-weight: normal;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox .checkbox-label {
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  accent-color: #6c63ff;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
