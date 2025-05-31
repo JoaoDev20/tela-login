@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Tela de Login</title>
   </head>
   <body>
     <div id="wrapper">
       <div class="container">
-        <div class="login-box">
+        
           <div class="column left">
+            <div class="login-box">
             <h1>Minha Conta</h1>
+            <form>
             <input
               type="text"
               name="email"
@@ -25,14 +33,24 @@
               placeholder="Digite sua senha"
             />
             <input type="submit" value="Acessar" />
-
+            </form>
+          </div>
             <div class="infobox">
-              <p>Novo por aqui? <a href="#">Cadastre-se</a></p>
+              <p>Novo por aqui? <a href="#">Cadastre-se.</a></p>
             </div>
           </div>
 
           <div class="column right">
-            <img src="assets/info.png" alt="img-info" />
+            <img src="assets/info.png" alt="img-info" class="logo-img" />
+            <div class="info-text">
+              <h1>Leve sua carreira ao proximo nivel.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+                suscipit, ex repellendus, earum tempora distinctio quis, iste
+                asperiores labore nemo eos ipsam et quo architecto perspiciatis
+                voluptatem. Laudantium, quae modi!
+              </p>
+            </div>
           </div>
         </div>
       </div>

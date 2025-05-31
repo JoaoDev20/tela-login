@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; /* Garante que a fonte seja aplicada globalmente */
+  margin: 0; /* Remove a margem padrão do body */
+  display: flex;
+  justify-content: center; /* Centraliza o wrapper horizontalmente */
+  align-items: center; /* Centraliza o wrapper verticalmente */
+  min-height: 100%; /* Faz o body ocupar pelo menos a altura total da viewport */
+  background-color: #ffff; /* Um fundo claro para a página */
+}
+
+#wrapper {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.column {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1200px;
+  margin-bottom: 50px;
+  height: 100%;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.right {
+  background-color: #0056fb;
+  padding-left: 50px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.login-box {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-box h1 {
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 170px;
+}
+
+.logo-img {
+  width: 525px;
+  height: 352px;
+  padding: 16px 8px 8px 16px;
+}
+
+.info-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-text p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #fff;
+  border: 1px solid #000;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 13px;
+  width: 320px;
+  color: #000;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #000;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: 0;
+  border: 1px solid #a1a1a1;
+}
+
+input[type="submit"] {
+  width: 320px;
+  margin-top: 10px;
+  height: 40px;
+  border: 0;
+  background-color: #0056fb;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0046d1;
+}
+
+.infobox {
+  background-color: #fff;
+  height: 60px;
+  margin: 10px auto 0;
+  padding-left: 170px;
+}
+
+.infobox p {
+  font-weight: bold;
+  user-select: none;
+}
+
+.infobox a {
+  user-select: none;
+  font-weight: normal;
+}
