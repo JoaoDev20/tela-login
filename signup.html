@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,59 +10,63 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <title>Tela de Cadastro</title>
+    <title>Cadastro - Dev Mentor BR</title>
   </head>
-  <body>
-    <div id="wrapper">
-      <div class="container">
+  <body>      
+    
+    <main class="container">
         
-          <div class="column left">
-            <div class="login-box">
-            <h1>Minha Conta</h1>
-            <form>
+          <section class="left">
+            <h1>Nova conta</h1>
+            <form class="form">
             <input
+              class="input"
               type="text"
               name="name"
               id="name"
               placeholder="Nome completo"
             />
             <input
-              type="text"
+              class="input"
+              type="email"
               name="email"
               id="email"
               placeholder="Digite seu email"
             />
             <input
+            class="input"
               type="password"
               name="password"
               id="password"
               placeholder="Digite sua senha"
             />
-            <input type="submit" value="Criar conta" />
-
-            <input type="checkbox" id="termos" name="termos" value="Concordo com os termos" class="checkbox"/>
-            <label for="termos" class="checkbox-label">Concordo com os termos</label>
-            </form>
-          </div>
-            <div class="infobox">
-              <p>Já possuo um conta? <a href="index.html">Faça login.</a></p>
+          
+            <div class="area">
+              <input type="radio" id="termos" name="termos" class="termos"/>
+              <span>Concordo com os termos</span>
             </div>
-          </div>
+   
+           <button class="button" type="submit">Criar conta</button>        
+            </form>
+              <div class="area">
+              <p class="link">Já possui um conta? <a href="index.html">Faça login.</a></p>
+            </div>
+          </section>
+          
 
-          <div class="column right">
-            <img src="assets/info.png" alt="img-info" class="logo-img" />
-            <div class="info-text">
-              <h1>Leve sua carreira ao proximo nivel.</h1>
-              <p>
+          <section class="right">
+           <img src="assets/info.png" alt="img-info" class="info-img" />
+            
+              <h2 class="subtitle">Leve sua carreira ao proximo nivel.</h2>
+              <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
                 suscipit, ex repellendus, earum tempora distinctio quis, iste
                 asperiores labore nemo eos ipsam et quo architecto perspiciatis
                 voluptatem. Laudantium, quae modi!
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
+          </section>
+        </main>
+  
     </div>
   </body>
 </html>
